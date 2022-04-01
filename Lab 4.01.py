@@ -47,5 +47,16 @@ def de_vowel(string):
             no_vowels += letter 
     return no_vowels
 
-ex_string = input("give me a sting: ")
-print(de_vowel(ex_string))
+
+def count_vowels(string):
+    count = 0
+    for letter in string:
+        if letter in vowels:
+            count += 1
+    
+    return count
+
+
+new_string = input("Enter a new string to devowel:  ")
+print(f"there are {count_vowels(new_string)} vowels in your string")
+print(f"Your devoweled string is: {de_vowel(new_string)}.")
