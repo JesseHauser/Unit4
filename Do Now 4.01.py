@@ -47,7 +47,11 @@ for num in list_of_numbers:
 
 
 
+from numpy import append
+
+
 single_fruit = ['apple', 'banana', 'watermelon', 'grape']
 multi_fruit = []
 for item in single_fruit:
     multi_fruit.append(f"{item}s")
+    print(multi_fruit)
