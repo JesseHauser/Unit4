@@ -107,8 +107,23 @@ print(f"No longer singular words: {word_list}")
                 # if word_list[c][-1] == 'y':
                # word_list[c] = word_list[c].replace('y', 'ies')
 
+# def my_reverse(string_to_reverse):
+#         return string_to_reverse[::-1]
+
+# reversed = my_reverse("apples")
+# print(reversed)
+
+
+
+my_list = ['apple', 'berry', 'melon']
 def my_reverse(string_to_reverse):
         return string_to_reverse[::-1]
 
-reversed = my_reverse("apples")
-print(reversed)
+def reverse_string_in_list(list_to_reverse):
+    reversed_list = []
+
+    for item in list_to_reverse:
+        reversed_list.append(my_reverse)
+        return reversed_list
+
+reverse_string_in_list(my_list)
