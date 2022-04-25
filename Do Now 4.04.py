@@ -28,6 +28,9 @@ my_building = [
     ['apt2a', 'apt2b', 'apt2c'],
     ['apt3a', 'apt3b', 'apt3c']
 ]
-print("first floor: " + str(my_building[0]))
-print("first floor, 3rd apartment: " + str(my_building[0][2]))
-print("Third Floor, 2nd Apartment" + str(my_building[2][1]))
+
+
+
+for i in range(len(my_building)):
+    for j in range(len(my_building[i])):
+        print(my_building[i][j])
